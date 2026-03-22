@@ -1,0 +1,5 @@
+{
+  "name": "Formal Spec Runtime",
+  "description": "A prototype of a formal specification runtime that parses a YAML-like DSL, simulates state transitions, and verifies system invariants.",
+  "requestFramePermissions": []
+}

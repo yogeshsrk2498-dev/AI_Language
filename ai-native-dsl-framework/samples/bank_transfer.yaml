@@ -1,0 +1,3 @@
+# Bank Transfer Sample
+state_schema:
+  balance_a: Number

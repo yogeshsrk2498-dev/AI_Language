@@ -1,0 +1,3 @@
+# Travel Booking Sample
+state_schema:
+  workflow_status: String

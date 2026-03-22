@@ -1,0 +1,13 @@
+state_schema:
+  workflow_status: String
+  hotel_booked: Boolean
+
+invariants:
+  - NEVER: workflow_status == "Committed" AND hotel_booked == False
+
+action Commit_Booking:
+  requires:
+    - workflow_status == "Pending"
+    - hotel_booked == True
+  mutates:
+    - workflow_status = "Committed"

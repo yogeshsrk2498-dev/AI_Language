@@ -1,0 +1,15 @@
+state_schema:
+  balance_a: Number
+  balance_b: Number
+
+invariants:
+  - ALWAYS: balance_a + balance_b == 1000
+  - NEVER: balance_a < 0
+  - NEVER: balance_b < 0
+
+action Transfer_100:
+  requires:
+    - balance_a >= 100
+  mutates:
+    - balance_a = balance_a - 100
+    - balance_b = balance_b + 100
